@@ -1,0 +1,24 @@
+# 'i386', 'arm', 'mips' and 'powerpc' are other options.
+export A=x86_64
+
+export CC=gcc
+export HOSTCC=gcc
+export MAKE_THREADS=2
+
+# `R` is the root that butch will link into.
+export R=/usr/local/
+
+# 'S' is the `butch` directory containing recipes, files and build directories.
+export S=/src
+
+# `K` is a directory of patches and needed files.
+export K=/src/KEEP
+
+# `C` is the downloaded tarball cache.
+export C=/src/tarballs
+
+export LOGPATH=/src/logs
+
+export BUTCH_BUILD_TEMPLATE="$K"/butch_build_template.txt
+export BUTCH_DOWNLOAD_TEMPLATE="$K"/butch_download_template.txt
+
